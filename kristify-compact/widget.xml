@@ -1,0 +1,6 @@
+<frame id="_widget" width="parent.w-2" height="1">
+    <label id="_name" x="1" y="1" fg="lime" />
+    <label id="_stock" x="9" y="1" fg="white" />
+    <label id="_metaname" x="9" y="1" fg="white" />
+    <button id="_price" x="parent.w-(self.w)+1" y="1" width="5" height="1" bg="green" fg="white" />
+</frame>
