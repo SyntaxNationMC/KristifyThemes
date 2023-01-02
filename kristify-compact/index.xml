@@ -4,7 +4,7 @@
         <label id="_title" text="" font='2' x="2" y="2" fg="green" bg="black" />
         <label id="_title_end" text=".kst" font='1' x="1" y="4" fg="lightGray" bg="black" />
         <frame x="parent.w/2+1" y="3" width="parent.w/2-2" height="2" bg="black">
-            <label id="_subtitle" text="" x="parent.w/2" y="3" width="parent.w/2-3" height="2" bg="black" fg="white" />
+            <label id="_subtitle" text="" x="1" y="1" width="parent.w/2-3" height="2" bg="black" fg="white" />
         </frame>
         <pane bgSymbol="&#127;" bgSymbolColor="gray" bg="black" x="1" y="5" width="parent.w" height="1" />
         <frame id="__category" x="1" y="6" width="parent.w" height="1" bg="gray" fg="green" />
