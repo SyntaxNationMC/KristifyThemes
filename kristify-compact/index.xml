@@ -1,5 +1,5 @@
 <frame id="_app">
-    <frame id="_body" x="1" y="7" width="parent.w" height="parent.h-9" bg="gray" fg="lightGray" />
+    <frame id="_body" x="1" y="6" width="parent.w" height="parent.h-9" bg="gray" fg="lightGray" />
     <frame id="_head" x="1" y="1" width="parent.w" height="6" bg="black">
         <label id="_title" text="" font='2' x="2" y="2" fg="green" bg="black" />
         <label id="_title_end" text=".kst" font='1' x="1" y="4" fg="lightGray" bg="black" />
@@ -7,14 +7,20 @@
             <label id="_subtitle" text="" x="1" y="1" width="parent.w" height="parent.h" bg="black" fg="white" />
         </frame>
         <pane bgSymbol="&#127;" bgSymbolColor="gray" bg="black" x="1" y="5" width="parent.w" height="1" />
-        <frame id="__category" x="1" y="6" width="parent.w" height="1" bg="gray" fg="green" />
+        <frame id="__category" x="1" y="6" width="parent.w" height="1" bg="gray">
+            <label x="2" y="1" text="Products" fg="green" />
+            <label x="parent.w/3.3" y="1" text="Amount" fg="green" />
+            <label x="parent.w/3.3*2" y="1" text="Name" fg="green" />
+            <label x="parent.w/3.3*3" y="1" text="Price" fg="green" />
+        </frame>
     </frame>
     <pane bg="black" x="1" y="parent.h" width="parent.w" height="1" />
     <label id="_importantMSG" text="" x="1" y="parent.h" bg="black" fg="white" />
-    <frame id="_navigation" x="2" y="parent.h-1" width="parent.w-2" height="1" bg="gray">
+    <frame id="_navigation" x="1" y="parent.h-1" width="parent.w" height="1" bg="gray">
+        <pane bgSymbol="&#127;" bgSymbolColor="gray" bg="black" x="1" y="1" width="parent.w" height="1" />
         <button id="_navBack" onClick="navBack" text=" &#017; " x="parent.w/2-self.w-2" y="1" width="3" height="1" fg="white" bg="green" />
         <button id="_navNext" onClick="navNext" text=" &#016; " x="parent.w/2+self.w" y="1" width="3" height="1" fg="white" bg="green" />
         <label id="_curPage" text="" x="parent.w/2" y="1" fg="white" />
-        <label id="_watermark" text="lol" x="parent.w-self.w-3" y="1" bg="gray" fg="lightGray" />
+        <label id="_watermark" text="lol" x="parent.w-self.w-3" y="1" bg="black" fg="gray" />
     </frame>
 </frame>
