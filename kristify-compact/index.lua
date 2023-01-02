@@ -54,7 +54,7 @@ basalt.onEvent(function(event)
         return sub
       end
 
-      repos("_name", 1)
+      repos("_name", 2)
       local sub = repos("_stock", nCategoryW)
       if sub then
         local amount = tonumber(sub:getValue()) or 0
