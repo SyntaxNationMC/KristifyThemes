@@ -54,13 +54,13 @@ basalt.onEvent(function(event)
         return sub
       end
 
-      repos("_name", 2)
-      local sub = repos("_stock", 1+nCategoryW)
+      repos("_name", 1)
+      local sub = repos("_stock", nCategoryW)
       if sub then
         local amount = tonumber(sub:getValue()) or 0
         sub:setText(amount.." ("..math.floor(amount/64)..")")
       end
-      local meta = repos("_metaname", 1+nCategoryW*2)
+      local meta = repos("_metaname", nCategoryW*2)
       if meta then
         local name = meta:getValue()
         meta:setText(name..'@')
