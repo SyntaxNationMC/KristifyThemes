@@ -6,16 +6,6 @@ local index = base:addFrame("_app")
   :setSize("parent.w","parent.h")
   :addLayout(fs.combine(ctx.path.page, "index.xml"))
 
-local head = index:getDeepObject("_head")
-local name = ctx.config.discordTag or "ctx.config.discordTag"
-local discord = head:addImage()
-  :setPosition("parent.w/2-self.w/2-"..((#name)/2-1),4)
-  :setSize(8, 6)
-  :loadImage(fs.combine(ctx.path.page, "discord.bimg"))
-local dctag = head:addLabel()
-  :setText(name)
-  :setPosition("parent.w/2-self.w/2+4",6)
-
 local palette = {
     ["black"]     = 0x202124,
     ["blue"]      = 0x5662F6,
